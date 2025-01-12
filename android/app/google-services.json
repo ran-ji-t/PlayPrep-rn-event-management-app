@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "400405602989",
+    "project_id": "play-prep",
+    "storage_bucket": "play-prep.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400405602989:android:bbd2bc79d42be919d75c24",
+        "android_client_info": {
+          "package_name": "com.playprep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400405602989-pcgh0t521hdekdmm12mgkq6tfmhgdpib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playprep",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "400405602989-6ar0kq8j7ubdhn6jvn984k8atat2cbb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSctozP6cjl0bNjAGYlFytorzZ5OHmuVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400405602989-6ar0kq8j7ubdhn6jvn984k8atat2cbb9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "400405602989-vo7oouq0k172960f6l2ogtld91ifka7a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.playprep"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "PlayPrep",
+    "slug": "PlayPrep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/appIcons/logo.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "assetBundlePatterns": [
+      "assets/images/*",
+      "assets/appIcons/*",
+      "assets/fonts/*"
+    ],
+    "splash": {
+      "image": "./assets/appIcons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.playprep",
+      "googleServicesFile": "./firebaseConfigFiles/GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/appIcons/adaptiveIcon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.playprep",
+      "googleServicesFile": "./firebaseConfigFiles/google-services.json"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFramewroks": "static"
+          },
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "expo-font",
+      "expo-sqlite"
+    ]
+  }
+}
