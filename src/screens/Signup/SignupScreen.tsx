@@ -102,7 +102,7 @@ const Signup = () => {
       <View style={styles.emptyContainer} />
       {isLoading ? (
         <View style={styles.loaderContainer}>
-          <ActivityIndicator color={background.primaryDark} size={hp(20)} />
+          <ActivityIndicator color={background.buttonDark} size={hp(20)} />
         </View>
       ) : (
         <Button buttonText="Sign up" onPress={handleSignUp} />

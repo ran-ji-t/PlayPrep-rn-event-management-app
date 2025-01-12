@@ -17,7 +17,7 @@ const Calendar = ({
   onDateTapped,
 }: CalendarComponentProps) => {
   const [currentDate, setCurrentDate] = useState(date);
-  const { data, error } = useQuery({
+  const { data, error, isLoading } = useQuery({
     queryKey: [`marks/${currentDate}/${groupId}`],
     queryFn: () => getMarks(currentDate, groupId),
   });
@@ -37,6 +37,7 @@ const Calendar = ({
       <Pressable style={styles.pressable} onPress={onClose} />
       <View style={styles.listWrapper}>
         <ExpandableCalendar
+          displayLoadingIndicator = {isLoading}
           onDayPress={(day) => onDateTapped(day.dateString)}
           theme={calendarTheme}
           closeOnDayPress={false}

@@ -6,7 +6,7 @@ import {
   FlatList,
   StyleSheet,
   Text,
-  View
+  View,
 } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
 
@@ -26,7 +26,7 @@ const GroupInfoContainer = ({ groupId, onClose }: InfoCOntainerProps) => {
     () => moment(data?.createDate).format("YYYY/MM/DD"),
     [data?.createDate]
   );
-  console.log(error)
+  console.log(error);
   return (
     <View style={styles.container}>
       <View style={styles.child}>
@@ -35,7 +35,17 @@ const GroupInfoContainer = ({ groupId, onClose }: InfoCOntainerProps) => {
         {!isLoading && !error && (
           <View style={styles.contectContainer}>
             <View style={styles.infoCOntainer}>
-              <Text style={styles.title}>{data?.name}</Text>
+              <Text style={styles.title}>
+                {data?.name}
+                <Text
+                  style={{
+                    fontSize: wp(10),
+                    color: text.primaryDark,
+                  }}
+                >
+                  {" "}({groupId})
+                </Text>
+              </Text>
               <Text style={styles.description}>{data?.description}</Text>
               <Text style={styles.date}>{date}</Text>
             </View>
@@ -64,12 +74,12 @@ const GroupInfoContainer = ({ groupId, onClose }: InfoCOntainerProps) => {
           </View>
         )}
         <Feather
-            onPress={onClose}
-            style={styles.minimizeIcon}
-            name="minimize-2"
-            size={wp(20)}
-            color={text.placeholder}
-          />
+          onPress={onClose}
+          style={styles.minimizeIcon}
+          name="minimize-2"
+          size={wp(20)}
+          color={text.placeholder}
+        />
       </View>
     </View>
   );
@@ -97,7 +107,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: border,
     borderRadius: 10,
-    backgroundColor: background.primary
+    backgroundColor: background.primary,
   },
   oops: {
     fontSize: wp(35),

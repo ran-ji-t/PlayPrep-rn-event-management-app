@@ -83,7 +83,7 @@ const Login = () => {
         <View style={styles.emptyContainer} />
         {isLoading ? (
           <View style={styles.loaderContainer}>
-            <ActivityIndicator color={background.primaryDark} size={hp(20)} />
+            <ActivityIndicator color={background.buttonDark} size={hp(20)} />
           </View>
         ) : (
           <Button activeOpacity={1} buttonText="Log in" onPress={handleLogin} />

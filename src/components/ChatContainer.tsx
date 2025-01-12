@@ -110,6 +110,9 @@ const ChatContainer = ({ eventId, onClose }: CHatContainerProps) => {
                   onEndReached={(info) => {
                     setChatId(chats.at(-1)?.id ?? "");
                   }}
+                  contentContainerStyle={{
+                    width: "100%",
+                  }}
                   onEndReachedThreshold={0}
                   data={chats}
                   renderItem={({ item, index }) => {
@@ -205,7 +208,6 @@ const styles = StyleSheet.create({
   chatContainer: {
     flex: 1,
     width: "100%",
-    alignItems: "center",
     justifyContent: "center",
   },
   emptyPlaceholder: {
